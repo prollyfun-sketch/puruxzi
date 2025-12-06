@@ -1,14 +1,15 @@
-import re
 from puruxzi.assistant.tools.dolphin import DolphinTool
 from puruxzi.assistant.tools.calculator import CalculatorTool
-
-ROUTES = [
-    (r"dolphin", DolphinTool),
-    (r"^calc\s", CalculatorTool),
-]
+from puruxzi.assistant.tools.quote import QuoteTool
 
 def route_tool(message: str):
-    for pattern, tool_cls in ROUTES:
-        if re.search(pattern, message, re.IGNORECASE):
-            return tool_cls()
-    return None
+    message = message.lower()
+
+    if "dolphin" in message:
+        return DolphinTool()
+    elif "calculate" in message or "add" in message or "plus" in message:
+        return CalculatorTool()
+    elif "quote" in message or "inspire" in message:
+        return QuoteTool()
+    else:
+        return None
