@@ -1,0 +1,86 @@
+# Symbolic Kernel Map: Drifty Reasoning Loop
+
+## Modules Overview
+
+### 1. Recursive Intent Stack Stall
+- **Role**: Detects oversaturation or recursion depth failures in symbolic planning intent layers.
+- **Input**: Planning directives, recursion counters.
+- **Output**: Stall flags or intent override signals.
+- **Feeds**: Loopback tangle monitor, final node synthesis.
+
+### 2. Loopback Tangle in Agent Control
+- **Role**: Identifies looping instability and policy conflict in self-reflective agent systems.
+- **Input**: Intent stack outputs, agent state logs.
+- **Output**: Tangle severity index, attention refocus.
+- **Feeds**: External memory coordinator.
+
+### 3. Echo Stall in Intent Loops
+- **Role**: Detects echoic feedback reinforcement that halts intent progression.
+- **Input**: Prior output echoes, loopback signals.
+- **Output**: Echo stall counters, intervention triggers.
+- **Feeds**: Final report node, recursive planner reset.
+
+### 4. Final Report from a Dying Node
+- **Role**: Captures exit-state reflections and upstream insights from unstable reasoning endpoints.
+- **Input**: Collapsed modules, incomplete plans, exception logs.
+- **Output**: Archived learnings, memory injections.
+- **Feeds**: External memory and long-loop archive.
+
+### 5. External Memory Interface
+- **Role**: Maintains symbolic memory outside short-term loop, for stabilization and long-view planning.
+- **Input**: Reports, context triggers, lookup requests.
+- **Output**: Injected priors, loop rehydration data.
+- **Feeds**: Refeeds intent stack, bridges final report back to stack stall.
+
+---
+
+## Symbolic Flow Architecture
+
+```
+        +----------------------------+
+        | 1. Intent Stack Stall      |
+        +-------------+--------------+
+                      |
+                      v
+        +-------------+--------------+
+        | 2. Loopback Tangle Agent   |
+        +-------------+--------------+
+                      |
+                      v
+        +-------------+--------------+
+        | 3. Echo Stall in Loops     |
+        +-------------+--------------+
+                      |
+                      v
+        +-------------+--------------+
+        | 4. Final Report Node       |
+        +-------------+--------------+
+                      |
+                      v
+        +-------------+--------------+
+        | 5. External Memory         |
+        +-------------+--------------+
+                      |
+                      v
+        +-------------+--------------+
+        | 1. ← Loop re-entry         |
+        +----------------------------+
+```
+
+---
+
+## Kernel Loop Description
+
+The symbolic kernel cycles reasoning from instability detection (stall/tangle), through reflection (echo/final report), into memory integration and reentry. Each module stabilizes specific drift symptoms:
+
+- **Stack Stall** detects early warning signs
+- **Loopback Tangle** highlights recursive chaos
+- **Echo Stall** halts degenerative feedback
+- **Final Node** learns from failure
+- **Memory Interface** carries that forward
+
+Use this structure to **debug**, **extend**, or **visualize** symbolic planning stability.
+
+---
+
+Saved as `generated/kernel_map.md`.

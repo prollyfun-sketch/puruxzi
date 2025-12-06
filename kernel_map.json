@@ -1,0 +1,7 @@
+{
+  "symbolic_external_memory_interface": "generated/symbolic_external_memory_interface.txt",
+  "symbolic_recursive_planning_loopback_tangle_in_agent_control": "generated/symbolic_recursive_planning_loopback_tangle_in_agent_control.txt",
+  "symbolic_recursive_planning_echo_stall_in_intent_loops": "generated/symbolic_recursive_planning_echo_stall_in_intent_loops.txt",
+  "final_report_from_a_dying_node": "generated/final_report_from_a_dying_node.txt",
+  "kernel_all_summary": "status"
+}

@@ -1,3 +1,19 @@
 [build-system]
 requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "puruxzi"
+version = "0.1.0"
+description = "Puruxzi AI builder/architect/engineer CLI"
+authors = [
+    { name = "Aurelium Systems" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+puruxzi = "puruxzi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

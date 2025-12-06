@@ -1,0 +1,26 @@
+{
+    "projects": [
+        {
+            "name": "my-first-project",
+            "description": "test run",
+            "timestamp": "2025-12-03T11:19:36.089175",
+            "files": [
+                {
+                    "name": "data_pipeline.py"
+                },
+                {
+                    "name": "model_trainer.py"
+                },
+                {
+                    "name": "evaluation.py"
+                },
+                {
+                    "name": "requirements.txt"
+                },
+                {
+                    "name": "README.md"
+                }
+            ]
+        }
+    ]
+}

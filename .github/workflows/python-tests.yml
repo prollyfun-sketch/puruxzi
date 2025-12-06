@@ -22,9 +22,13 @@ jobs:
           pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov --cov-branch --cov-report=xml
+        run: pytest --cov=src --cov-branch --cov-report=xml
 
       - name: Upload results to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Fail if coverage is too low (optional)
+        run: |
+          curl --silent https://codecov.io/api/gh/prollyfun-sketch/puruxzi/commit/${{ github.sha }} | jq '.commit.totals.c' | awk '{ if ($1+0 < 80) exit 1 }'
